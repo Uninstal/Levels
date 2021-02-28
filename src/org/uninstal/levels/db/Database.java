@@ -10,6 +10,7 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 import org.bukkit.Bukkit;
+import org.uninstal.levels.Main;
 
 public class Database {
 
@@ -22,7 +23,7 @@ public class Database {
 	private Connection connection;
 
 	public Database(String host, String basename, String user, String password) {
-		System.out.println(123);
+		
 		this.user = user;
 		this.host = host;
 		this.password = password;
@@ -41,7 +42,8 @@ public class Database {
 	        Bukkit.getConsoleSender().sendMessage("[ApocalypseLevels] §a§lDatabase successfully connected!");
 			
 		} catch (Exception e) {
-			e.printStackTrace();
+			Bukkit.getConsoleSender().sendMessage("[ApocalypseLevels] §c§lDatabase unsuccessfully connected!");
+			Bukkit.getPluginManager().disablePlugin(Main.getPlugin(Main.class));
 		}
 		
         return;
