@@ -25,8 +25,6 @@ public class Main extends JavaPlugin {
 		
 		Database db = new Database(Values.HOST, Values.BASE, Values.USER, Values.PASS);
 		if(db.getConnection() == null) return;
-		
-		
 	}
 	
 	@Override
