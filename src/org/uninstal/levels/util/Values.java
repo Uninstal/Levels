@@ -51,7 +51,7 @@ public class Values {
 		String saveEnergy = config.getString(path + "SaveEnergy.name");
 		
 		NAMES.put(PerkType.Dexterity, dexterity);
-		NAMES.put(PerkType.Survivability, survivabillity);
+		NAMES.put(PerkType.Survivabillity, survivabillity);
 		NAMES.put(PerkType.MetalLeather, metalLeather);
 		NAMES.put(PerkType.Walker, walker);
 		NAMES.put(PerkType.Hunter, hunter);
@@ -74,7 +74,7 @@ public class Values {
 		int hunter = config.getInt(path + "Hunter.value");
 		
 		PERKS.put(PerkType.Dexterity, dexterity);
-		PERKS.put(PerkType.Survivability, survivabillity);
+		PERKS.put(PerkType.Survivabillity, survivabillity);
 		PERKS.put(PerkType.MetalLeather, metalLeather);
 		PERKS.put(PerkType.Walker, walker);
 		PERKS.put(PerkType.Hunter, hunter);

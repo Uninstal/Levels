@@ -51,7 +51,7 @@ public class User {
 		this.perks.put(PerkType.Hunter, 0);
 		
 		//Живучесть, увеличение максимального здоровья
-		this.perks.put(PerkType.Survivability, 0);
+		this.perks.put(PerkType.Survivabillity, 0);
 		
 		//Скороход, увеличение скорости ходьбы
 		this.perks.put(PerkType.Walker, 0);
@@ -123,7 +123,7 @@ public class User {
 	@SuppressWarnings("deprecation")
 	public void updatePerks() {
 		
-		int survivabillity = perks.get(PerkType.Survivability);
+		int survivabillity = perks.get(PerkType.Survivabillity);
 		int walker = perks.get(PerkType.Walker);
 		
 		double health = survivabillity * 2d;
